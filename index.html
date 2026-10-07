@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+   <h1><!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <header><link rel="stylesheet" href="styles.css" /></header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mode et Style | بوتيك الموضة والأناقة الجزائرية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #c29958;
+      --primary-dark: #a37b3f;
+      --dark: #121212;
+      --light-bg: #f8fafc;
+      --border: #e2e8f0;
+      --slate: #475569;
+      --radius: 12px;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', system-ui, sans-serif;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      color: var(--dark);
+    }
+
+    /* الشريط الإعلاني */
+    .top-bar {
+      background: var(--dark);
+      color: #fff;
+      font-size: 0.85rem;
+      padding: 8px 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .badge-promo {
+      background: var(--primary);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+
+    /* الترويسة والشعار */
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--dark);
+    }
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--dark);
+      border: 2px solid var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+    .brand-sub {
+      font-size: 0.72rem;
+      color: var(--primary-dark);
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .btn-admin {
+      background: var(--dark);
+      color: #fff;
+      padding: 0.55rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* شريط الضمانات والمزايا */
+    .features-bar {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 0.9rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+    .feature-box {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--slate);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 2.5rem auto;
+      padding: 0 1.2rem;
+    }
+
+    .headline {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .headline h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 0.3rem;
+    }
+    .headline p {
+      color: var(--slate);
+      font-size: 0.95rem;
+    }
+
+    /* شبكة المنتجات */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    .badge-card {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: var(--dark);
+      color: #fff;
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .product-img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      background: #f1f5f9;
+    }
+    .product-info {
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .product-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .product-price {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--primary-dark);
+      margin-bottom: 1.2rem;
+    }
+    .btn-buy {
+      margin-top: auto;
+      background: var(--dark);
+      color: #fff;
+      border: none;
+      padding: 0.85rem;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-buy:hover {
+      background: var(--primary-dark);
+    }
+
+    /* نافذة استمارة الشراء */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .modal-overlay.open {
+      display: flex;
+    }
+    .order-dialog {
+      background: #fff;
+      width: 100%;
+      max-width: 960px;
+      max-height: 92vh;
+      border-radius: 14px;
+      overflow-y: auto;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+    }
+    @media (max-width: 820px) {
+      .order-dialog { grid-template-columns: 1fr; }
+    }
+    .btn-close {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: #f1f5f9;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .modal-preview {
+      background: #f8fafc;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-preview img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .modal-content-side {
+      padding: 2rem;
+    }
+    .options-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin-bottom: 0.5rem;
+    }
+    .chips-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.2rem;
+    }
+    .chip {
+      border: 1.5px solid var(--border);
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      background: #fff;
+    }
+    .chip.active {
+      background: var(--dark);
+      color: #fff;
+      border-color: var(--dark);
+    }
+    .form-box {
+      border-top: 1px solid var(--border);
+      padding-top: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .field label {
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .field input, .field select {
+      padding: 0.7rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+    .field input:focus, .field select:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    .qty-row {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin: 0.4rem 0;
+    }
+    .btn-qty {
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .qty-number {
+      font-weight: 800;
+      min-width: 28px;
+      text-align: center;
+    }
+    .invoice-card {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .invoice-line {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.4rem;
+    }
+    .invoice-line.total {
+      font-size: 1.2rem;
+      font-weight: 900;
+      border-top: 1px dashed var(--border);
+      padding-top: 0.6rem;
+      margin-top: 0.6rem;
+    }
+    .btn-order-submit {
+      background: var(--primary-dark);
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    /* لوحة التحكم والإدارة */
+    .admin-dialog {
+      background: #fff;
+      width: 100%;
+      max-width: 950px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 12px;
+      padding: 2rem;
+      position: relative;
+    }
+    .admin-nav {
+      display: flex;
+      gap: 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+    .tab-btn {
+      background: none;
+      border: none;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      color: var(--slate);
+    }
+    .tab-btn.active {
+      background: var(--dark);
+      color: #fff;
+    }
+    .admin-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: right;
+      font-size: 0.85rem;
+    }
+    .admin-table th, .admin-table td {
+      padding: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .admin-table th {
+      background: #f8fafc;
+    }
+    .btn-del {
+      background: #fee2e2;
+      color: #dc2626;
+      border: none;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn-csv {
+      background: #10b981;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    /* التذييل */
+    footer {
+      background: var(--dark);
+      color: #fff;
+      padding: 3rem 1.5rem 1.5rem;
+      margin-top: 4rem;
+    }
+    .footer-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .footer-col h4 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .footer-col p {
+      font-size: 0.9rem;
+      color: #aaa;
+      line-height: 1.6;
+    }
+    .footer-copy {
+      text-align: center;
+      border-top: 1px solid #222;
+      padding-top: 1.5rem;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط الإعلان -->
+  <div class="top-bar">
+    <span>🌟 مرحباً بكم في <strong>Mode et Style</strong> — تشكيلة الموسم متوفرة الآن![cite: 2]</span>
+    <span class="badge-promo">الدفع بعد المعاينة عند الاستلام 🇩🇿[cite: 3, 4]</span>
+  </div>
+
+  <!-- الترويسة والشعار -->
+  <header>
+    <a href="#" class="brand-logo">
+      <div class="brand-icon">M&S</div>
+      <div class="brand-text">
+        <span class="brand-title">Mode et Style</span>
+        <span class="brand-sub">Fashion Boutique</span>
+      </div>
+    </a>
+    <button class="btn-admin" onclick="openAdminModal()">⚙️ لوحة الإدارة والطلبات</button>
+  </header>
+
+  <!-- شريط المزايا -->
+  <div class="features-bar">
+    <div class="feature-box"><span>🚚</span> توصيل سريع لـ 58 ولاية[cite: 4]</div>
+    <div class="feature-box"><span>📦</span> فحص ومعاينة السلعة قبل الدفع[cite: 4]</div>
+    <div class="feature-box"><span>💎</span> خامات وتصاميم أصلية 100%</div>
+    <div class="feature-box"><span>📞</span> خدمة زبائن ومتابعة هاتفية</div>
+  </div>
+
+  <main class="container">
+    <div class="headline">
+      <h2>تشكيلة الموسم الجديدة</h2>
+      <p>أرقى الموديلات الحصرية المصممة لتمنحك إطلالة راقية وجذابة[cite: 2, 3]</p>
+    </div>
+
+    <!-- شبكة المنتجات -->
+    <div class="products-grid" id="productsGrid"></div>
+  </main>
+
+  <!-- نافذة استمارة الطلب (COD Modal) -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="order-dialog">
+      <button class="btn-close" onclick="closeOrderModal()">&times;</button>
+
+      <div class="modal-preview">
+        <img id="mImg" src="" alt="product">
+      </div>
+
+      <div class="modal-content-side">
+        <h2 id="mName" style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.4rem;"></h2>
+        <div id="mPrice" style="font-size: 1.35rem; font-weight: 900; color: var(--primary-dark); margin-bottom: 1.2rem;"></div>
+
+        <div id="colorContainer">
+          <div class="options-label">اختيار اللون (Couleur):[cite: 3]</div>
+          <div class="chips-box" id="colorChips"></div>
+        </div>
+
+        <div id="sizeContainer">
+          <div class="options-label">اختيار المقاس (Pointure / Taille):[cite: 3, 4]</div>
+          <div class="chips-box" id="sizeChips"></div>
+        </div>
+
+        <form class="form-box" onsubmit="handlePlaceOrder(event)">
+          <div class="field">
+            <label>الاسم واللقب الكامل *[cite: 4]</label>
+            <input type="text" id="custName" placeholder="Nom et prénom" required>
+          </div>
+
+          <div class="field">
+            <label>رقم الهاتف للتأكيد *[cite: 4]</label>
+            <input type="tel" id="custPhone" placeholder="05 / 06 / 07..." required>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="field">
+              <label>الولاية *[cite: 4]</label>
+              <select id="custWilaya" onchange="onWilayaChange()" required></select>
+            </div>
+            <div class="field">
+              <label>البلدية *[cite: 4]</label>
+              <select id="custBaladiya" required disabled>
+                <option value="">اختر الولاية أولاً...[cite: 4]</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>العنوان بالتفصيل *[cite: 4, 5]</label>
+            <input type="text" id="custAddress" placeholder="الحي، رقم المنزل..." required>
+          </div>
+
+          <div class="qty-row">
+            <span style="font-weight: 700; font-size: 0.9rem;">الكمية:[cite: 5]</span>
+            <button type="button" class="btn-qty" onclick="adjustQty(-1)">-</button>
+            <span class="qty-number" id="qtyNumber">1</span>
+            <button type="button" class="btn-qty" onclick="adjustQty(1)">+</button>
+          </div>
+
+          <div class="invoice-card">
+            <div class="invoice-line">
+              <span>سعر المنتج:[cite: 4, 5]</span>
+              <span id="invoiceSubtotal">0 DA</span>
+            </div>
+            <div class="invoice-line">
+              <span>سعر التوصيل:[cite: 5]</span>
+              <span id="invoiceShipping">0 DA</span>
+            </div>
+            <div class="invoice-line total">
+              <span>المجموع النهائي:[cite: 5]</span>
+              <span id="invoiceTotal">0 DA</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-order-submit">إشتري الآن (الدفع عند الاستلام) 🛍️[cite: 5]</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- لوحة الإدارة الكاملة -->
+  <div class="modal-overlay" id="adminModal">
+    <div class="admin-dialog">
+      <button class="btn-close" onclick="closeAdminModal()">&times;</button>
+      <h2 style="margin-bottom: 1rem; font-weight: 900;">لوحة تحكم Mode et Style</h2>
+
+      <div class="admin-nav">
+        <button id="tabOrdersBtn" class="tab-btn active" onclick="switchAdminTab('orders')">📦 الطلبات (<span id="ordersCount">0</span>)</button>
+        <button id="tabProductsBtn" class="tab-btn" onclick="switchAdminTab('products')">🏷️ إدارة المنتجات والصور</button>
+      </div>
+
+      <!-- تبويب الطلبات -->
+      <div id="tabOrders">
+        <button class="btn-csv" onclick="exportOrdersToCSV()">📥 تصدير الطلبات (Excel / CSV)</button>
+        <div style="overflow-x: auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>التاريخ</th>
+                <th>الزبون[cite: 4]</th>
+                <th>الهاتف[cite: 4]</th>
+                <th>الولاية والبلدية[cite: 4]</th>
+                <th>المنتج والمقاس[cite: 3, 4]</th>
+                <th>الكمية[cite: 5]</th>
+                <th>المجموع[cite: 5]</th>
+                <th>واتساب</th>
+                <th>إجراء</th>
+              </tr>
+            </thead>
+            <tbody id="ordersTbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- تبويب المنتجات وإضافة الصور -->
+      <div id="tabProducts" style="display: none;">
+        <div style="background: #f8fafc; border: 1px solid var(--border); padding: 1.2rem; border-radius: 8px; margin-bottom: 1.5rem;">
+          <h3 style="margin-bottom: 0.8rem; font-size: 1.1rem;">➕ إضافة منتج جديد ورفع صورته</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-bottom: 1rem;">
+            <input type="text" id="addName" placeholder="اسم المنتج" style="padding:0.6rem; border:1px solid #cbd5e1; border-radius:6px;">
+            <input type="number" id="addPrice" placeholder="السعر (DA)" style="padding:0.6rem; border:1px solid #cbd5e1; border-radius:6px;">[cite: 2, 3]
+            <input type="text" id="addColors" placeholder="الألوان (مثال: أبيض, أسود, بيج)" style="padding:0.6rem; border:1px solid #cbd5e1; border-radius:6px;">[cite: 3]
+            <input type="text" id="addSizes" placeholder="المقاسات (مثال: 37, 38, 39, 40)" style="padding:0.6rem; border:1px solid #cbd5e1; border-radius:6px;">[cite: 3]
+            <input type="file" id="addImageFile" accept="image/*" style="padding:0.4rem;">
+          </div>
+          <button class="btn-order-submit" style="padding: 0.6rem 1.5rem; font-size: 0.95rem;" onclick="saveProductFromAdmin()">حفظ ونشر المنتج</button>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>الصورة</th>
+                <th>الاسم[cite: 2]</th>
+                <th>السعر[cite: 2]</th>
+                <th>إجراء</th>
+              </tr>
+            </thead>
+            <tbody id="productsTbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- التذييل -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Mode et Style</h4>
+        <p>بوتيك الأناقة العصرية في الجزائر. نوفر لكم أفضل التشكيلات الحصرية بأعلى معايير الجودة والتصميم الراقي[cite: 2, 3].</p>
+      </div>
+      <div class="footer-col">
+        <h4>ضمان الشراء</h4>
+        <p>التوصيل السريع لـ 58 ولاية مع حق الزبون الكامل في فحص ومعاينة السلعة قبل دفع المستحقات[cite: 4].</p>
+      </div>
+      <div class="footer-col">
+        <h4>خدمة العملاء</h4>
+        <p>هاتف: 0550 00 00 00<br>الجزائر العاصمة، الجزائر</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      جميع الحقوق محفوظة &copy; 2026 بوتيك Mode et Style
+    </div>
+  </footer>
+
+  <script>
+    // قاعدة بيانات الولايات الـ 58 والبلديات
+    const algeriaDatabase = [
+      { code: 1, name: "01 - أدرار", fee: 900, communes: ["أدرار", "تمنطيط", "فنوغيل", "رقان", "زاوية كنتة", "أولف", "تيمقطن", "تسابيت"] },
+      { code: 2, name: "02 - الشلف", fee: 500, communes: ["الشلف", "تنس", "بوقادير", "وادي الفضة", "الكريمية", "أولاد فارس", "عين مران", "بوزغاية"] },
+      { code: 3, name: "03 - الأغواط", fee: 600, communes: ["الأغواط", "أفلو", "قصر الحيران", "عين ماضي", "سيدي مخلوف", "البيضاء", "الغيشة"] },
+      { code: 4, name: "04 - أم البواقي", fee: 500, communes: ["أم البواقي", "عين البيضاء", "عين مليلة", "عين فكرون", "سوق نعمان", "مسكيانة", "فكيرينة"] },
+      { code: 5, name: "05 - باتنة", fee: 500, communes: ["باتنة", "بريكة", "عين التوتة", "مروانة", "أريس", "نقاوس", "المعذر", "تازولت", "سريانة"] },
+      { code: 6, name: "06 - بجاية", fee: 500, communes: ["بجاية", "أقبو", "أميزور", "سوق الاثنين", "خراطة", "صدوق", "إغيل علي", "أوقاس"] },
+      { code: 7, name: "07 - بسكرة", fee: 600, communes: ["بسكرة", "طولقة", "سيدي عقبة", "الوطاية", "زريبة الوادي", "جمورة", "أورلال", "فوغالة"] },
+      { code: 8, name: "08 - بشار", fee: 800, communes: ["بشار", "القنادسة", "العبادلة", "تاغيت", "لحمر", "بني ونيف", "تبلبالة"] },
+      { code: 9, name: "09 - البليدة", fee: 400, communes: ["البليدة", "الأربعاء", "بوفاريك", "أولاد يعيش", "العفرون", "مفتاح", "الصومعة", "الشبلي", "موزاية", "بوقرة", "وادي العلايق", "الشفة"] },
+      { code: 10, name: "10 - البويرة", fee: 450, communes: ["البويرة", "الأخضرية", "سور الغزلان", "عين بسام", "مشد الله", "بئر غبالو", "قاديرية", "حيزر"] },
+      { code: 11, name: "11 - تمنراست", fee: 1000, communes: ["تمنراست", "أبالسة", "عين أمقل", "إدلس", "تاظروك"] },
+      { code: 12, name: "12 - تبسة", fee: 600, communes: ["تبسة", "بئر العاتر", "الشريعة", "الونزة", "العوينات", "المرمية", "الكويف", "العقلة"] },
+      { code: 13, name: "13 - تلمسان", fee: 500, communes: ["تلمسان", "مغنية", "منصورة", "ندرومة", "الغزوات", "سبدو", "شتوان", "الرمشي", "سبع شيوخ"] },
+      { code: 14, name: "14 - تيارت", fee: 500, communes: ["تيارت", "فرندة", "السوقر", "قصر الشلالة", "مهدية", "رحوية", "مشرع الصفا", "عين كرمس"] },
+      { code: 15, name: "15 - تيزي وزو", fee: 450, communes: ["تيزي وزو", "عزازقة", "ذراع الميزان", "تيزي راشد", "واقنون", "بوغني", "لاربعا ناث إيراثن", "عين الحمام"] },
+      { code: 16, name: "16 - الجزائر العاصمة", fee: 400, communes: ["الجزائر الوسطى", "باب الوادي", "سيدي امحمد", "بئر مراد رايس", "بئر خادم", "حيدرة", "الأبيار", "بن عكنون", "القبة", "الحراش", "براقي", "الدار البيضاء", "باب الزوار", "برج الكيفان", "عين البنيان", "زرالدة", "الشراقة", "دالي براهيم", "الرويبة", "الرغاية", "الدرارية", "أولاد فايت"] },
+      { code: 17, name: "17 - الجلفة", fee: 600, communes: ["الجلفة", "عين وسارة", "مسعد", "حاسي بحبح", "دار الشيوخ", "الشارف", "الإدريسية", "البيرين"] },
+      { code: 18, name: "18 - جيجل", fee: 500, communes: ["جيجل", "الطاهير", "الميلية", "العوانة", "زيامة منصورية", "الشقفة", "العنصر", "السطارة"] },
+      { code: 19, name: "19 - سطيف", fee: 450, communes: ["سطيف", "العلمة", "عين ولمان", "عين الكبيرة", "عين أرنات", "بوقاعة", "جميلة", "صالح باي"] },
+      { code: 20, name: "20 - سعيدة", fee: 550, communes: ["سعيدة", "عين الحجر", "يوب", "سيدي بوبكر", "أولاد إبراهيم", "الحساسنة"] },
+      { code: 21, name: "21 - سكيكدة", fee: 500, communes: ["سكيكدة", "الحروش", "عزابة", "القل", "تمالوس", "رمضان جمال", "سيدي مزغيش", "فلفلة"] },
+      { code: 22, name: "22 - سيدي بلعباس", fee: 500, communes: ["سيدي بلعباس", "تلاغ", "سفيزف", "ابن باديس", "رأس الماء", "سيدي لحسن", "تسالة"] },
+      { code: 23, name: "23 - عنابة", fee: 500, communes: ["عنابة", "البوني", "الحجار", "برحال", "سرايدي", "عين الباردة", "شطايبي", "العلمة"] },
+      { code: 24, name: "24 - قالمة", fee: 500, communes: ["قالمة", "وادي الزناتي", "بوشقوف", "هيليوبوليس", "حمام دباغ", "عين مخلوف", "بلخير"] },
+      { code: 25, name: "25 - قسنطينة", fee: 450, communes: ["قسنطينة", "الخروب", "حامة بوزيان", "ديدوش مراد", "زيغود يوسف", "ابن زياد", "عين سمارة", "أولاد رحمون"] },
+      { code: 26, name: "26 - المدية", fee: 450, communes: ["المدية", "البرواقية", "قصر البخاري", "وزرة", "تابلاط", "سغوان", "الشهبونية", "العمارية"] },
+      { code: 27, name: "27 - مستغانم", fee: 500, communes: ["مستغانم", "عين تدلس", "حاسي مماش", "سيدي علي", "خير الدين", "بوقيرات", "ماسرة"] },
+      { code: 28, name: "28 - المسيلة", fee: 500, communes: ["المسيلة", "بوسعادة", "سيدي عيسى", "مقرة", "عين الحجل", "برهوم", "أولاد دراج", "حمام الضلعة"] },
+      { code: 29, name: "29 - معسكر", fee: 500, communes: ["معسكر", "سيق", "تيغنيف", "المحمدية", "غريس", "عوف", "وادي الأبطال", "زهانة"] },
+      { code: 30, name: "30 - ورقلة", fee: 700, communes: ["ورقلة", "حاسي مسعود", "الرويسات", "سيدي خويلد", "عين البيضاء", "البرمة"] },
+      { code: 31, name: "31 - وهران", fee: 450, communes: ["وهران", "السانية", "بئر الجير", "عين الترك", "أرزيو", "بطيوة", "قديل", "مرسى الكبير", "وادي تليلات", "بوتليليس"] },
+      { code: 32, name: "32 - البيض", fee: 700, communes: ["البيض", "الأبيض سيدي الشيخ", "بوعلام", "بريزينة", "بوقطب", "الرقاصة", "الكاف الأحمر"] },
+      { code: 33, name: "33 - إليزي", fee: 1000, communes: ["إليزي", "عين أمناس", "برج الحواس", "دبداب"] },
+      { code: 34, name: "34 - برج بوعريريج", fee: 450, communes: ["برج بوعريريج", "رأس الوادي", "برج زمورة", "المنصورة", "مجانة", "الحمادية", "خليل"] },
+      { code: 35, name: "35 - بومرداس", fee: 400, communes: ["بومرداس", "برج منايل", "دلس", "يسر", "الثنية", "بودواو", "خميس الخشنة", "الناصرية", "سي مصطفى"] },
+      { code: 36, name: "36 - الطارف", fee: 550, communes: ["الطارف", "القالة", "بن مهيدي", "بوحجار", "الذرعان", "البسباس", "الشط", "عين العسل"] },
+      { code: 37, name: "37 - تندوف", fee: 1000, communes: ["تندوف", "أم العسل"] },
+      { code: 38, name: "38 - تسمسيلت", fee: 550, communes: ["تسمسيلت", "ثنية الحد", "برج بونعامة", "لردام", "خميستي", "الأزهرية", "العيون"] },
+      { code: 39, name: "39 - الوادي", fee: 700, communes: ["الوادي", "قمار", "الدبيلة", "الرقيبة", "البياضة", "الرباح", "حاسي خليفة", "الطريفاوي"] },
+      { code: 40, name: "40 - خنشلة", fee: 550, communes: ["خنشلة", "ششار", "قايس", "بابار", "المحمل", "عين الطويلة", "طامزة"] },
+      { code: 41, name: "41 - سوق أهراس", fee: 550, communes: ["سوق أهراس", "سدراتة", "مداوروش", "تاورة", "المشروحة", "أولاد إدريس", "الحدادة"] },
+      { code: 42, name: "42 - تيبازة", fee: 400, communes: ["تيبازة", "شرشال", "القليعة", "بوسماعيل", "حجوط", "فوكة", "الداموس", "قوراية", "سيدي غيلاس", "حطاطبة"] },
+      { code: 43, name: "43 - ميلة", fee: 500, communes: ["ميلة", "شلغوم العيد", "تاجنانت", "فرجيوة", "قرارم قوقة", "التلاغمة", "سيدي مروان"] },
+      { code: 44, name: "44 - عين الدفلى", fee: 450, communes: ["عين الدفلى", "خميس مليانة", "مليانة", "العطاف", "العبادية", "جليدة", "بومدفع", "حمام ريغة"] },
+      { code: 45, name: "45 - النعامة", fee: 750, communes: ["النعامة", "المشرية", "عين الصفراء", "مكمن بن عمار", "عسلة", "صفيصيفة", "تيوت"] },
+      { code: 46, name: "46 - عين تموشنت", fee: 500, communes: ["عين تموشنت", "بني صاف", "حمام بوحجر", "العامرية", "عين الأربعاء", "ولهاصة", "المالح"] },
+      { code: 47, name: "47 - غرداية", fee: 700, communes: ["غرداية", "العطف", "بني يزقن", "ضاية بن ضحوة", "القرارة", "بريان", "متليلي", "زلفانة"] },
+      { code: 48, name: "48 - غليزان", fee: 500, communes: ["غليزان", "وادي ارهيو", "مازونة", "يلل", "جديوية", "زمورة", "المطمر", "عمي موسى"] },
+      { code: 49, name: "49 - تيميمون", fee: 900, communes: ["تيميمون", "أوقروت", "شروين", "تينركوك", "دل دول", "أولاد سعيد"] },
+      { code: 50, name: "50 - برج باجي مختار", fee: 1100, communes: ["برج باجي مختار", "تيمياوين"] },
+      { code: 51, name: "51 - أولاد جلال", fee: 650, communes: ["أولاد جلال", "سيدي خالد", "رأس الميعاد", "البسباس", "الشعيبة", "أم العظام"] },
+      { code: 52, name: "52 - بني عباس", fee: 900, communes: ["بني عباس", "كرزاز", "الواتة", "إقلي", "تامترت", "تبلبالة"] },
+      { code: 53, name: "53 - عين صالح", fee: 950, communes: ["عين صالح", "إينغر", "فقارة الزاوية"] },
+      { code: 54, name: "54 - عين قزام", fee: 1100, communes: ["عين قزام", "تين زواتين"] },
+      { code: 55, name: "55 - تقرت", fee: 700, communes: ["تقرت", "النزلة", "تبسبست", "الزاوية العابدية", "تماسين", "المقارين", "الطيبات"] },
+      { code: 56, name: "56 - جانت", fee: 1100, communes: ["جانت", "برج الحواس"] },
+      { code: 57, name: "57 - المغير", fee: 700, communes: ["المغير", "جامعة", "أم الطيور", "سيدي خليل", "المرارة", "تندلة"] },
+      { code: 58, name: "58 - المنيعة", fee: 850, communes: ["المنيعة", "حاسي القارة", "حاسي الفحل"] }
+    ];
+
+    const initialCatalog = [
+      {
+        id: 1,
+        name: "سابو نسائي أنيق ومريح - لمسة عصرية لإطلالتك اليومية",
+        price: 2000,
+        image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600",
+        colors: ["أبيض كريمي", "بني فاتح", "أسود", "بني داكن"],
+        sizes: ["37", "38", "39", "40"]
+      },
+      {
+        id: 2,
+        name: "عباية خليجية فاخرة مطرزة باليد - قماش كريب أصلي",
+        price: 4500,
+        image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=600",
+        colors: ["عنابي ملكي", "كحلي داكن", "أسود فاحم"],
+        sizes: ["M", "L", "XL", "XXL"]
+      }
+    ];
+
+    let storeProducts = JSON.parse(localStorage.getItem('mode_products')) || initialCatalog;
+    let storeOrders = JSON.parse(localStorage.getItem('mode_orders')) || [];
+    let currentProduct = null;
+    let selectedColor = "";
+    let selectedSize = "";
+    let orderQuantity = 1;
+
+    function init() {
+      const wilayaSelect = document.getElementById('custWilaya');
+      wilayaSelect.innerHTML = '<option value="">-- اختر الولاية --</option>' + 
+        algeriaDatabase.map(w => '<option value="' + w.code + '">' + w.name + ' (' + w.fee + ' DA)</option>').join('');
+
+      renderProducts();
+      updateOrdersBadge();
+    }
+
+    function renderProducts() {
+      const grid = document.getElementById('productsGrid');
+      grid.innerHTML = storeProducts.map(p => `
+        <div class="product-card" onclick="openOrderModal(${p.id})">
+          <span class="badge-card">جديد</span>
+          <img src="${p.image}" class="product-img" alt="${p.name}">
+          <div class="product-info">
+            <h3 class="product-title">${p.name}</h3>
+            <div class="product-price">${p.price.toLocaleString()} DA</div>
+            <button class="btn-buy">طلب فوري 🛍️</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function onWilayaChange() {
+      const code = parseInt(document.getElementById('custWilaya').value);
+      const baladiyaSelect = document.getElementById('custBaladiya');
+
+      if (!code) {
+        baladiyaSelect.innerHTML = '<option value="">اختر الولاية أولاً...</option>';
+        baladiyaSelect.disabled = true;
+        updateOrderSummary();
+        return;
+      }
+
+      const found = algeriaDatabase.find(w => w.code === code);
+      if (found) {
+        baladiyaSelect.disabled = false;
+        baladiyaSelect.innerHTML = '<option value="">-- اختر البلدية --</option>' + 
+          found.communes.map(c => '<option value="' + c + '">' + c + '</option>').join('');
+      }
+
+      updateOrderSummary();
+    }
+
+    function openOrderModal(productId) {
+      currentProduct = storeProducts.find(p => p.id === productId);
+      if (!currentProduct) return;
+
+      orderQuantity = 1;
+      document.getElementById('qtyNumber').innerText = orderQuantity;
+      document.getElementById('mName').innerText = currentProduct.name;
+      document.getElementById('mPrice').innerText = currentProduct.price.toLocaleString() + ' DA';
+      document.getElementById('mImg').src = currentProduct.image;
+
+      // الألوان
+      const colDiv = document.getElementById('colorChips');
+      if (currentProduct.colors && currentProduct.colors.length) {
+        selectedColor = currentProduct.colors[0];
+        colDiv.innerHTML = currentProduct.colors.map(c => `
+          <div class="chip ${c === selectedColor ? 'active' : ''}" onclick="pickOption('color', '${c}', this)">${c}</div>
+        `).join('');
+        document.getElementById('colorContainer').style.display = 'block';
+      } else {
+        document.getElementById('colorContainer').style.display = 'none';
+        selectedColor = "-";
+      }
+
+      // المقاسات
+      const szDiv = document.getElementById('sizeChips');
+      if (currentProduct.sizes && currentProduct.sizes.length) {
+        selectedSize = currentProduct.sizes[0];
+        szDiv.innerHTML = currentProduct.sizes.map(s => `
+          <div class="chip ${s === selectedSize ? 'active' : ''}" onclick="pickOption('size', '${s}', this)">${s}</div>
+        `).join('');
+        document.getElementById('sizeContainer').style.display = 'block';
+      } else {
+        document.getElementById('sizeContainer').style.display = 'none';
+        selectedSize = "-";
+      }
+
+      document.getElementById('custWilaya').value = "";
+      onWilayaChange();
+      document.getElementById('orderModal').classList.add('open');
+    }
+
+    function pickOption(type, val, elem) {
+      elem.parentElement.querySelectorAll('.chip').forEach(e => e.classList.remove('active'));
+      elem.classList.add('active');
+      if (type === 'color') selectedColor = val;
+      if (type === 'size') selectedSize = val;
+    }
+
+    function adjustQty(diff) {
+      if (orderQuantity + diff >= 1) {
+        orderQuantity += diff;
+        document.getElementById('qtyNumber').innerText = orderQuantity;
+        updateOrderSummary();
+      }
+    }
+
+    function updateOrderSummary() {
+      if (!currentProduct) return;
+      const code = parseInt(document.getElementById('custWilaya').value);
+      const wilaya = algeriaDatabase.find(w => w.code === code);
+      const shipping = wilaya ? wilaya.fee : 0;
+      const subtotal = currentProduct.price * orderQuantity;
+      const total = subtotal + shipping;
+
+      document.getElementById('invoiceSubtotal').innerText = subtotal.toLocaleString() + ' DA';
+      document.getElementById('invoiceShipping').innerText = shipping ? shipping.toLocaleString() + ' DA' : '0 DA';
+      document.getElementById('invoiceTotal').innerText = total.toLocaleString() + ' DA';
+    }
+
+    function closeOrderModal() {
+      document.getElementById('orderModal').classList.remove('open');
+    }
+
+    function handlePlaceOrder(e) {
+      e.preventDefault();
+      const code = parseInt(document.getElementById('custWilaya').value);
+      const wilaya = algeriaDatabase.find(w => w.code === code);
+      const shipping = wilaya ? wilaya.fee : 0;
+      const total = (currentProduct.price * orderQuantity) + shipping;
+
+      const orderItem = {
+        id: Date.now(),
+        date: new Date().toLocaleDateString('ar-DZ'),
+        product: currentProduct.name,
+        name: document.getElementById('custName').value,
+        phone: document.getElementById('custPhone').value,
+        wilaya: wilaya.name,
+        baladiya: document.getElementById('custBaladiya').value,
+        address: document.getElementById('custAddress').value,
+        color: selectedColor,
+        size: selectedSize,
+        qty: orderQuantity,
+        total: total
+      };
+
+      storeOrders.unshift(orderItem);
+      localStorage.setItem('mode_orders', JSON.stringify(storeOrders));
+      updateOrdersBadge();
+
+      alert("✅ شكراً لكِ " + orderItem.name + "! تم تسجيل طلبك بنجاح.\nسنتصل بكِ لتأكيد الشحن.");
+      closeOrderModal();
+    }
+
+    // إدارة المتجر والمنتجات
+    function openAdminModal() {
+      document.getElementById('adminModal').classList.add('open');
+      renderAdminOrders();
+      renderAdminProducts();
+    }
+    function closeAdminModal() {
+      document.getElementById('adminModal').classList.remove('open');
+    }
+    function switchAdminTab(tab) {
+      document.getElementById('tabOrdersBtn').classList.toggle('active', tab === 'orders');
+      document.getElementById('tabProductsBtn').classList.toggle('active', tab === 'products');
+      document.getElementById('tabOrders').style.display = tab === 'orders' ? 'block' : 'none';
+      document.getElementById('tabProducts').style.display = tab === 'products' ? 'block' : 'none';
+    }
+    function updateOrdersBadge() {
+      document.getElementById('ordersCount').innerText = storeOrders.length;
+    }
+    function renderAdminOrders() {
+      const tbody = document.getElementById('ordersTbody');
+      tbody.innerHTML = storeOrders.map(o => `
+        <tr>
+          <td>${o.date}</td>
+          <td><strong>${o.name}</strong></td>
+          <td>${o.phone}</td>
+          <td>${o.wilaya} (${o.baladiya})</td>
+          <td>${o.product} [${o.size} / ${o.color}]</td>
+          <td>${o.qty}</td>
+          <td><strong>${o.total.toLocaleString()} DA</strong></td>
+          <td>
+            <a href="https://wa.me/213${o.phone.replace(/^0/, '')}?text=${encodeURIComponent('مرحباً ' + o.name + ' من بوتيك Mode et Style بخصوص طلبك لـ ' + o.product)}" target="_blank" style="color:#10b981; font-weight:bold; text-decoration:none;">واتساب</a>
+          </td>
+          <td><button class="btn-del" onclick="deleteOrder(${o.id})">حذف</button></td>
+        </tr>
+      `).join('');
+    }
+    function deleteOrder(id) {
+      if (confirm('هل ترغب في حذف هذا الطلب نهائياً؟')) {
+        storeOrders = storeOrders.filter(o => o.id !== id);
+        localStorage.setItem('mode_orders', JSON.stringify(storeOrders));
+        renderAdminOrders();
+        updateOrdersBadge();
+      }
+    }
+    function exportOrdersToCSV() {
+      if (!storeOrders.length) return alert('لا توجد طلبات مسجلة حالياً.');
+      let csv = "التاريخ,الاسم,الهاتف,الولاية,البلدية,العنوان,المنتج,المقاس,اللون,الكمية,المجموع\n";
+      storeOrders.forEach(o => {
+        csv += '"' + o.date + '","' + o.name + '","' + o.phone + '","' + o.wilaya + '","' + o.baladiya + '","' + o.address + '","' + o.product + '","' + o.size + '","' + o.color + '","' + o.qty + '","' + o.total + '"\n';
+      });
+      const blob = new Blob(["\ufeff" + csv], { type: 'text/csv;charset=utf-8;' });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "طلبات_Mode_et_Style_" + new Date().toISOString().slice(0,10) + ".csv";
+      a.click();
+    }
+    function renderAdminProducts() {
+      const tbody = document.getElementById('productsTbody');
+      tbody.innerHTML = storeProducts.map(p => `
+        <tr>
+          <td><img src="${p.image}" width="45" height="45" style="border-radius:6px; object-fit:cover;"></td>
+          <td>${p.name}</td>
+          <td>${p.price.toLocaleString()} DA</td>
+          <td><button class="btn-del" onclick="deleteProduct(${p.id})">حذف</button></td>
+        </tr>
+      `).join('');
+    }
+    function deleteProduct(id) {
+      if (confirm('هل تريد حذف هذا المنتج من الواجهة؟')) {
+        storeProducts = storeProducts.filter(p => p.id !== id);
+        localStorage.setItem('mode_products', JSON.stringify(storeProducts));
+        renderAdminProducts();
+        renderProducts();
+      }
+    }
+    function saveProductFromAdmin() {
+      const name = document.getElementById('addName').value.trim();
+      const price = parseFloat(document.getElementById('addPrice').value);
+      const colorsStr = document.getElementById('addColors').value.trim();
+      const sizesStr = document.getElementById('addSizes').value.trim();
+      const file = document.getElementById('addImageFile');
+
+      if (!name || isNaN(price)) return alert('يرجى كتابة الاسم والسعر بشكل صحيح.');
+
+      const colors = colorsStr ? colorsStr.split(',').map(s => s.trim()) : [];
+      const sizes = sizesStr ? sizesStr.split(',').map(s => s.trim()) : [];
+
+      if (file.files && file.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          pushProduct(name, price, colors, sizes, e.target.result);
+        };
+        reader.readAsDataURL(file.files[0]);
+      } else {
+        pushProduct(name, price, colors, sizes, "https://via.placeholder.com/600x600?text=Mode+et+Style");
+      }
+    }
+    function pushProduct(name, price, colors, sizes, img) {
+      storeProducts.unshift({ id: Date.now(), name, price, colors, sizes, image: img });
+      localStorage.setItem('mode_products', JSON.stringify(storeProducts));
+      renderProducts();
+      renderAdminProducts();
+      alert('تمت إضافة المنتج بنجاح إلى المعرض!');
+      document.getElementById('addName').value = '';
+      document.getElementById('addPrice').value = '';
+      document.getElementById('addColors').value = '';
+      document.getElementById('addSizes').value = '';
+      document.getElementById('addImageFile').value = '';
+    }
+
+    init();
+  </script>
+</body>
+</html></h1> 
+</body>
+</html>
